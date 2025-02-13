@@ -70,7 +70,7 @@ const UpcomingClasses = () => {
           .map((classes, index) => (
             <div
               key={index}
-              className="bg-white shadow-lg border border-yellow-600 rounded-xl p-4 flex flex-col items-center text-center"
+              className="bg-white shadow-lg border border-yellow-600 rounded-xl p-4 flex flex-col items-center text-center transition-transform hover:scale-105"
             >
               <div className="w-[90%] h-40 overflow-hidden">
                 <img

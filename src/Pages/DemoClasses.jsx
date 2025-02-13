@@ -55,7 +55,7 @@ const DemoClasses = () => {
           .map((demo, index) => (
             <div
               key={index}
-              className="relative bg-white shadow-lg border border-blue-950 rounded-xl p-4 flex flex-col items-center text-center"
+              className="relative bg-white shadow-lg border border-blue-950 rounded-xl p-4 flex flex-col items-center text-center transition-transform hover:scale-105"
             >
               <div className="w-[90%] h-40 overflow-hidden">
                 <img
