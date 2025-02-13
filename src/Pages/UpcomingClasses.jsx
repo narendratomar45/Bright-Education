@@ -56,14 +56,14 @@ const UpcomingClasses = () => {
 
   return (
     <div>
-        <div className=" text-xl bg-gray-500">Upcoming Classes</div>
+        <div className=" text-xl bg-yellow-500 text-center p-1 font-bold text-white ">Upcoming Classes</div>
       <div className="p-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {upcomingClass
           .slice(0, showAll ? upcomingClass.length : 3)
           .map((classes, index) => (
             <div
               key={index}
-              className="bg-white shadow-lg border border-blue-950 rounded-xl p-4 flex flex-col items-center text-center"
+              className="bg-white shadow-lg border border-yellow-600 rounded-xl p-4 flex flex-col items-center text-center"
             >
               <div className="w-[90%] h-40 overflow-hidden">
                 <img
