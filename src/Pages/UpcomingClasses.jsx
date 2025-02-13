@@ -56,6 +56,7 @@ const UpcomingClasses = () => {
 
   return (
     <div>
+        <div className=" text-xl bg-gray-500">Upcoming Classes</div>
       <div className="p-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {upcomingClass
           .slice(0, showAll ? upcomingClass.length : 3)
