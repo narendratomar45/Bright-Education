@@ -8,6 +8,7 @@ import DemoClasses from "./DemoClasses";
 import Batches from "./Batches";
 import BatchCard from "../Components/BatchCard";
 import UpcomingClasses from "./UpcomingClasses";
+import Teacher from "./Teacher";
 
 const Home = () => {
   const cardData = [
@@ -42,6 +43,7 @@ const Home = () => {
       <BatchCard />
       <DemoClasses />
       <UpcomingClasses />
+      <Teacher/>
 
     </div>
   );

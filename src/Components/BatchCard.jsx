@@ -117,7 +117,7 @@ const BatchCard = () => {
       <Slider {...settings}>
         {batchCard.map((card, index) => (
           <div key={index} className=" px-2">
-            <div className="flex  flex-col items-center bg-gray-200 rounded-xl shadow-xl p-5 mx-2 text-center">
+            <div className="flex  flex-col items-center bg-gray-200 border border-green-500 rounded-xl shadow-xl p-5 mx-2 text-center">
               <div className=" mx-auto">
                 <img
                   src={card.image}
@@ -135,10 +135,10 @@ const BatchCard = () => {
                 <p>Discount: {card.discount}</p>
               </div>
               <div className=" flex justify-between gap-8">
-                <button className="mt-2 bg-blue-500 text-white px-7 py-2 rounded-lg font-bold">
+                <button className="mt-2 bg-blue-500 text-white px-7 max-sm:px-3 py-2 rounded-lg font-bold">
                   {card.checkOut}
                 </button>
-                <button className="mt-2 bg-green-500 text-white px-7 py-2 rounded-lg font-bold">
+                <button className="mt-2 bg-green-500 text-white px-7 max-sm:px-3 py-2 rounded-lg font-bold">
                   {card.buyNow}
                 </button>
               </div>

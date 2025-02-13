@@ -56,7 +56,14 @@ const UpcomingClasses = () => {
 
   return (
     <div>
-        <div className=" text-xl bg-yellow-500 text-center p-1 font-bold text-white ">Upcoming Classes</div>
+      <h1 className="text-2xl font-bold text-center p-2  text-yellow-600 ">
+        Upcoming Classes
+      </h1>
+      <p className="text-center text-gray-700 mt-2">
+        Stay ahead in your learning journey! Join our expert-led classes and
+        boost your knowledge.
+      </p>
+
       <div className="p-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {upcomingClass
           .slice(0, showAll ? upcomingClass.length : 3)
@@ -98,7 +105,7 @@ const UpcomingClasses = () => {
       <div>
         <button
           onClick={() => setShowAll(!showAll)}
-          className="bg-blue-600 flex mx-auto text-white px-6 py-2 rounded-lg hover:bg-blue-800 transition"
+          className="bg-yellow-600 flex mx-auto text-white px-6 py-2 rounded-lg hover:bg-blue-800 transition"
         >
           {showAll ? "Show Less" : "View All Classes"}
         </button>
